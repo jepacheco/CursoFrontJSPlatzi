@@ -197,6 +197,8 @@ ul:hover {
     align-items: center;
     height: 100px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer a {
@@ -209,6 +211,20 @@ ul:hover {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+
+/* css para la pag 404 */
+
+.error__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error__container--img {
+    width: 50%;
+    height: 50%;
 }
 
 ::-webkit-scrollbar-thumb {
