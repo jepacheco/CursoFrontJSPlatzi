@@ -37,6 +37,10 @@ body {
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.6), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .login__container--form {
@@ -70,4 +74,74 @@ body {
     align-items: center;
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+.login__container--social-media>div>img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register {
+    font-size: 14px;
+}
+
+.login__container--register a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Ovo', serif;
+    margin-bottom: 20px;
+    outline: none;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    outline: none;
+    margin: 10px 0px;
+}
+
+.footer {
+    background-color: #ab88ff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
