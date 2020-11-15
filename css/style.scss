@@ -1,16 +1,40 @@
+$blanco: white;
 body {
     margin: 0px;
     font-family: 'Ovo', serif;
     background-color: #8f57fd;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 
+Ejemplo de mixin
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
 .header {
+    @include flex;
     background-color: #8f57fd;
     width: 100%;
     height: 80px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+*/
+
+.header {
+    @extend .flex;
+    background-color: #8f57fd;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
 }
 
 .header__img {
@@ -43,7 +67,7 @@ ul:hover {
 }
 
 .header__menu li a {
-    color: white;
+    color: $blanco;
     text-decoration: none;
 }
 
